@@ -1,4 +1,4 @@
-#include <unistd.h>
+#include <stdio.h>
 
 /**
  * main - Entry point
@@ -7,16 +7,18 @@
  */
 int main(void)
 {
-    char letter = 'a';
+    char letter1 = 'a';
+    char letter2 = '\n';
 
-    while (letter <= 'z')
+    putchar(letter1);
+
+    while (letter1 < 'z')
     {
-        putchar(letter);
-        letter++;
+        letter1++;
+        putchar(letter1);
     }
 
-    putchar('\n');
+    putchar(letter2);
 
     return (0);
 }
-
