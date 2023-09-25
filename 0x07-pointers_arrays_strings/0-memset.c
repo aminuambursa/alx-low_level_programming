@@ -1,22 +1,22 @@
 #include "main.h"
 /**
- * _memset - fills n bytes of memory
+ * _memset - function with 3 arguments
+ * @s: char type pointer 1st argument
+ * @b: char type 2nd argument
+ * @n: int type unsigned 3rd argument
  *
- * @s: pointer to start of memory area
- * @b: constant byte to fill with
- * @n: num bytes to fill in
- *
- * Return: pointer to beginning of memory area s
+ * Description: fills memory with a constant bye
+ * Return: a pointer to the memory area
  */
 char *_memset(char *s, char b, unsigned int n)
 {
-	unsigned int i = 0;
-	char *start = s;
+	unsigned int i;
 
+	i = 0;
 	while (i < n)
 	{
-		*s++ = b;
+		s[i] = b;
 		i++;
 	}
-	return (start);
+	return (s);
 }
